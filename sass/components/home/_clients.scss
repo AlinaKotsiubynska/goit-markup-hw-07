@@ -1,0 +1,55 @@
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+
+  fill: var(--icon-main);
+  border: 1px solid var(--icon-main);
+  border-radius: 4px;
+
+  transition: var(--time-transition) var(--duration-transition);
+}
+
+.clients-item-link:hover,
+.clients-item-link:focus {
+  fill: var(--acent-color);
+  border: 1px solid var(--acent-color);
+}
+
+.logo-1 {
+  width: 44.27px;
+  height: 49.23px;
+}
+
+.logo-2 {
+  width: 40px;
+  height: 52px;
+}
+
+.logo-3 {
+  width: 41px;
+  height: 42.6px;
+}
+
+.logo-4 {
+  width: 79.66px;
+  height: 42.02px;
+}
+
+.logo-5 {
+  width: 59px;
+  height: 47px;
+}
+
+.logo-6 {
+  width: 88.48px;
+  height: 45.44px;
+}
