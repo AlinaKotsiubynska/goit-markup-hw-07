@@ -383,7 +383,7 @@ nav {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-color);
-  background: var(--background-light-color);
+  background: var --background-light-color;
   border-radius: 4px;
   border: transparent;
   cursor: pointer;

@@ -573,14 +573,14 @@ nav {
   opacity: 0;
 }
 
-.modal-window {
+.modal__window {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   padding: 40px;
-  background-color: #fff;
+  background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--time-transition) var(--duration-transition);
@@ -609,6 +609,7 @@ nav {
   height: 100%;
 }
 
+/* modal form */
 .modal__text {
   width: 100%;
   margin-bottom: 12px;
@@ -621,6 +622,7 @@ nav {
 }
 
 .modal-form-field,
+.form-input-wraper,
 .form-input-wraper > input,
 .modal-form-field > textarea {
   display: block;
@@ -666,12 +668,11 @@ nav {
   border-color: var(--acent-color);
 }
 
-.form-input-wraper {
-  position: relative;
-}
-
 .icon-input {
   position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 18px;
   height: 18px;
   fill: var(--title-color);
@@ -684,6 +685,11 @@ nav {
 
 .form-input-wraper > input:focus + .icon-input {
   fill: var(--acent-color);
+}
+
+.form-input-wraper {
+  display: block;
+  position: relative;
 }
 
 .modal-form-field.message {
@@ -728,27 +734,23 @@ nav {
 }
 
 .modal-accept-conditions::before {
-  /* position: absolute; */
-  /* top: 50%;
-  transform: translateY(-50%); */
-  /* left: -24px; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -24px;
   display: inline-block;
-  margin-right: 12px;
-  margin-left: 7px;
   content: "";
   width: 16px;
   height: 15px;
   border: 2px solid var(--title-color);
   border-radius: 2px;
-  transition: all var(--time-transition) var(--duration-transition);
+  transition: var(--time-transition) var(--duration-transition);
 }
 
 .modal-accept-conditions {
-  /* position: absolute;
+  position: absolute;
   top: 0;
-  left: 36px; */
-  display: flex;
-  align-items: center;
+  left: 36px;
   font-size: 14px;
   line-height: 1.71;
   cursor: pointer;
@@ -763,17 +765,15 @@ nav {
 
 .modal-form-conditions > input:checked + .modal-accept-conditions::before {
   content: "";
-  /* display: inline-block; */
-  /* position: absolute;
-  transform: translateY(-50%); */
+  display: inline-block;
   border-color: transparent;
-  /* background-repeat: no-repeat;
-  overflow: visible; */
+  background-repeat: no-repeat;
   background-position: center;
   background-color: var(--acent-color);
   background-image: url(../images/original-images/icons-original/icon-check.svg);
   width: 16px;
   height: 15px;
+  /* transform: translateY(-50%); */
 }
 
 .modal-form-submit {
