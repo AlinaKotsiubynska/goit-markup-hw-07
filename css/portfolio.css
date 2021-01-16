@@ -341,7 +341,7 @@ nav {
   height: 44px;
   border-radius: 50%;
   background-color: transparent;
-  fill: var(--icon-main);
+  fill: var(--icon-main-color);
   transition: var(--time-transition) var(--duration-transition);
 }
 
