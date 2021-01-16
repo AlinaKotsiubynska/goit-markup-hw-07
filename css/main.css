@@ -586,7 +586,7 @@ nav {
   transition: transform var(--time-transition) var(--duration-transition);
 }
 
-.modal.is-hidden .modal-window {
+.modal.is-hidden .modal__window {
   transform: translate(-50%, -50%) scale(0.8);
 }
 
