@@ -196,12 +196,11 @@
 //   appearance: none;
 // }
 
-.modal-form__accept {
-  position: absolute;
-  top: 0;
-  left: 36px;
+//
 
-  color: var(--main-color);
+.banana {
+  display: inline-block;
+  color: blue;
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
@@ -209,10 +208,6 @@
   cursor: pointer;
 
   &::before {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -24px;
     display: inline-block;
     content: "";
     width: 16px;
@@ -224,6 +219,12 @@
   }
 }
 
+.check:checked + .banana::before {
+  background-image: url(../../../images/original-images/icons-original/icon-check.svg);
+  background-size: cover;
+  border-color: transparent;
+}
+
 .modal-form__link {
   display: inline-block;
   margin-left: 5px;
@@ -231,17 +232,17 @@
   color: var(--acent-color);
 }
 
-.modal-form__agreement > input :checked + .modal-form__accept::before {
-  content: "";
-  display: inline-block;
-  border-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--acent-color);
-  background-image: url(../../../images/original-images/icons-original/icon-check.svg);
-  width: 16px;
-  height: 15px;
-}
+// .modal-form__agreement > input :checked + .modal-form__accept::before {
+//   content: "";
+//   display: inline-block;
+//   border-color: transparent;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-color: var(--acent-color);
+//   background-image: url(../../../images/original-images/icons-original/icon-check.svg);
+//   width: 16px;
+//   height: 15px;
+// }
 
 .submit__btn:hover {
   background-color: red;
