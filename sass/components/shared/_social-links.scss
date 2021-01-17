@@ -1,15 +1,15 @@
-.social-list {
+.social-media {
   display: flex;
   margin-right: -10px;
   justify-content: center;
 }
 
-.social-list-item {
+.social-media__item {
   display: flex;
   margin-right: 10px;
 }
 
-.social-link {
+.social-media__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,17 +20,17 @@
   fill: var(--icon-main-color);
 
   transition: var(--time-transition) var(--duration-transition);
+
+  &:hover,
+  &:focus,
+  .footer &:hover,
+  .footer &:focus {
+    background-color: var(--acent-color);
+    fill: var(--white-color);
+  }
 }
 
-.social-link:hover,
-.social-link:focus,
-.footer .social-link:hover,
-.footer .social-link:focus {
-  background-color: var(--acent-color);
-  fill: var(--white-color);
-}
-
-.social-link-item {
+.social-media__icon {
   width: 20px;
   height: 20px;
 }
