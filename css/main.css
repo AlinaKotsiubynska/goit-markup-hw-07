@@ -15,7 +15,7 @@
   --duration-transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__title, .button-studio-hero {
+.hero__title, .hero__button {
   margin-left: auto;
   margin-right: auto;
 }
@@ -437,7 +437,7 @@ nav {
   color: var(--white-color);
 }
 
-.button-studio-hero {
+.hero__button {
   padding-left: 32px;
   padding-right: 32px;
 }
@@ -719,12 +719,6 @@ nav {
 .modal-form__agreement {
   position: relative;
   margin-bottom: 30px;
-}
-
-.check {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .modal-form__conditions {
