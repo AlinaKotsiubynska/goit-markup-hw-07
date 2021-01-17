@@ -149,17 +149,27 @@ img {
   cursor: pointer;
 }
 
-.logo-header {
+.logo {
   font-family: var(--logo-font);
   font-size: 26px;
   line-height: 1.17;
-  color: var(--logo-dark-color);
   letter-spacing: 0.03em;
-  margin-right: 93px;
 }
 
 .logo-web {
   color: var(--acent-color);
+  font-family: var(--logo-font);
+}
+
+.header__logo {
+  color: var(--logo-dark-color);
+  margin-right: 93px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--white-color);
 }
 
 header.portfolio {
@@ -260,15 +270,6 @@ nav {
   align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.logo-footer {
-  display: inline-block;
-  margin-bottom: 20px;
-  font-family: var(--logo-font);
-  font-size: 26px;
-  line-height: 1.17;
-  color: var(--white-color);
 }
 
 .footer-list-link,
