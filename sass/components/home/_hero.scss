@@ -17,7 +17,7 @@
   &__title {
     width: 696px;
     padding-bottom: 30px;
-    @extend %centered;
+    margin: 0 auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36em;
@@ -29,6 +29,6 @@
   &__button {
     padding-left: 32px;
     padding-right: 32px;
-    @extend %centered;
+    margin: 0 auto;
   }
 }

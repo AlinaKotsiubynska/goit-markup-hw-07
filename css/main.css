@@ -15,11 +15,6 @@
   --duration-transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__title, .hero__button {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -423,6 +418,7 @@ nav {
 .hero__title {
   width: 696px;
   padding-bottom: 30px;
+  margin: 0 auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36em;
@@ -435,6 +431,7 @@ nav {
 .hero__button {
   padding-left: 32px;
   padding-right: 32px;
+  margin: 0 auto;
 }
 
 .works-list {
