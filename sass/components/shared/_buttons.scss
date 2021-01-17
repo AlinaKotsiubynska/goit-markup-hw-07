@@ -8,7 +8,6 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
-  font-family: var(--main-font);
   color: var(--white-color);
 
   background-color: var(--acent-color);
@@ -16,12 +15,4 @@
   border: transparent;
 
   cursor: pointer;
-}
-
-.button-studio-hero {
-  padding-left: 32px;
-  padding-right: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  text-decoration: none;
 }

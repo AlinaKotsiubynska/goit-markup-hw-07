@@ -15,6 +15,11 @@
   --duration-transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hero__title, .button-studio-hero {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -47,7 +52,11 @@ h2,
 h3,
 p,
 a,
-button {
+button,
+form,
+input,
+label,
+span {
   font-family: var(--main-font);
 }
 
@@ -69,16 +78,23 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.container {
+.container, .hero__container {
   width: 1200px;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.container.section {
+.container.section, .section.hero__container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container.section, .section.hero__container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -137,20 +153,11 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
-  font-family: var(--main-font);
   color: var(--white-color);
   background-color: var(--acent-color);
   border-radius: 4px;
   border: transparent;
   cursor: pointer;
-}
-
-.button-studio-hero {
-  padding-left: 32px;
-  padding-right: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  text-decoration: none;
 }
 
 .logo-header {
@@ -170,7 +177,7 @@ header.portfolio {
   border-bottom: 1px solid #ececec;
 }
 
-header > .container {
+header > .container, header > .hero__container {
   display: flex;
   align-items: center;
   /* padding-top: 25px;
@@ -259,7 +266,7 @@ nav {
   background-color: var(--backgroud-dark-color);
 }
 
-.container.footer {
+.container.footer, .footer.hero__container {
   display: flex;
   align-items: baseline;
   padding-top: 60px;
@@ -411,26 +418,28 @@ nav {
   background-size: 1600px;
 }
 
-.container.hero {
+.hero__container {
   display: block;
   justify-content: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   padding-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 900;
+  ont-weight: 900;
   font-size: 44px;
   line-height: 1.36em;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  font-family: var(--main-font);
   color: var(--white-color);
+}
+
+.button-studio-hero {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .works-list {
@@ -641,7 +650,6 @@ nav {
   width: 100%;
   height: 40px;
   padding-left: 42px;
-  font-family: var(--main-font);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -669,7 +677,6 @@ nav {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
-  font-family: var(--main-font);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -682,7 +689,6 @@ nav {
 }
 
 .modal-form__message::placeholder {
-  font-family: var(--main-font);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -719,7 +725,6 @@ nav {
 .modal-form__conditions {
   display: flex;
   align-items: center;
-  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.71;
   color: var(--main-color);

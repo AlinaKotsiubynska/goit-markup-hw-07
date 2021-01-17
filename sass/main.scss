@@ -1,4 +1,6 @@
-@import "./utils/variables";
+@import "./utils/css-variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 @import "./utils/visually-hidden";
 
 @import "./base/common";
@@ -12,7 +14,7 @@
 @import "./components/shared/footer";
 
 @import "./components/home/features";
-@import "./components/home/hero-section";
+@import "./components/home/hero";
 @import "./components/home/works";
 @import "./components/home/team";
 @import "./components/home/clients";
