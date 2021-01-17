@@ -1,92 +1,101 @@
-header.portfolio {
-  border-bottom: 1px solid #ececec;
-}
-
-header > .container {
-  display: flex;
-  align-items: center;
-  /* padding-top: 25px;
-  padding-bottom: 25px; */
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-.nav,
-.header-address {
+.header {
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17em;
   letter-spacing: 0.02em;
+
+  &.portfolio {
+    border-bottom: 1px solid #ececec;
+  }
 }
 
-.nav-links {
+.header__container {
+  @extend .container;
   display: flex;
   align-items: center;
 }
 
-.nav-link-item:not(:last-child),
-.header-address-item:not(:last-child) {
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__pages {
+  display: flex;
+  align-items: center;
+}
+
+.nav__page:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-link {
-  display: inline-block;
+.nav__link {
+  display: block;
   padding: 32px 0;
 
   color: var(--title-color);
   text-decoration: none;
 
   transition: var(--time-transition) var(--duration-transition);
+
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+    fill: var(--acent-color);
+  }
+
+  &--current {
+    position: relative;
+    display: block;
+    color: var(--acent-color);
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      content: "";
+      height: 4px;
+      width: 100%;
+
+      background-color: var(--acent-color);
+      border-radius: 2px;
+    }
+  }
 }
 
-.header-address {
+.header__contacts {
   margin-left: auto;
-}
-
-.header-address-item {
   display: flex;
+  color: var(--main-color);
+
+  transition: var(--time-transition) var(--duration-transition);
 }
 
-.address-item,
-.header-address-list {
+.header__contact {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.address__link {
   display: flex;
   color: var(--main-color);
   fill: var(--main-color);
 
   transition: var(--time-transition) var(--duration-transition);
+
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+    fill: var(--acent-color);
+  }
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.address-item:hover,
-.address-item:focus {
-  color: var(--acent-color);
-  fill: var(--acent-color);
-}
-
-.address-icon {
+.address__icon {
   margin-right: 10px;
   margin-top: 1px;
-}
-
-.current {
-  position: relative;
-  display: block;
-  color: var(--acent-color);
-}
-
-.current::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  content: "";
-  height: 4px;
-  width: 100%;
-
-  background-color: var(--acent-color);
-  border-radius: 2px;
 }
