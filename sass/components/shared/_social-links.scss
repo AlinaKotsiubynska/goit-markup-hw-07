@@ -21,6 +21,11 @@
 
   transition: var(--time-transition) var(--duration-transition);
 
+  &--dark {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--white-color);
+  }
+
   &:hover,
   &:focus,
   .footer &:hover,
