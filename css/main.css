@@ -621,7 +621,7 @@ nav {
   text-align: center;
 }
 
-.modal-form__label {
+.modal-form__label, .user__message {
   display: block;
   margin-bottom: 10px;
   font-size: 12px;
@@ -632,7 +632,7 @@ nav {
   font-weight: 400;
 }
 
-.modal-form__labelmessage {
+.user__message {
   margin-bottom: 20px;
 }
 
@@ -641,7 +641,6 @@ nav {
   width: 100%;
   height: 40px;
   padding-left: 42px;
-  margin-top: 4px;
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 12px;
@@ -661,6 +660,7 @@ nav {
 .modal-form__wraper {
   display: block;
   position: relative;
+  margin-top: 4px;
 }
 
 .modal-form__message {
@@ -714,50 +714,40 @@ nav {
 .modal-form__agreement {
   position: relative;
   margin-bottom: 30px;
-  display: block;
 }
 
-.modal-form__agreement > input {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-.banana {
-  display: inline-block;
-  color: blue;
+.modal-form__conditions {
+  display: flex;
+  align-items: center;
   font-family: var(--main-font);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  color: var(--main-color);
   cursor: pointer;
 }
 
-.banana::before {
+.modal-form__conditions::before {
   display: inline-block;
+  margin-right: 7px;
+  margin-left: 12px;
   content: "";
   width: 16px;
   height: 15px;
-  border: 2px solid var(--title-color);
-  border-radius: 2px;
+  background-image: url(../../../images/original-images/icons-original/icon-unchecked.svg);
+  background-size: cover;
   transition: var(--time-transition) var(--duration-transition);
 }
 
-.check:checked + .banana::before {
+.check:checked + .modal-form__conditions::before {
   background-image: url(../../../images/original-images/icons-original/icon-check.svg);
   background-size: cover;
-  border-color: transparent;
 }
 
 .modal-form__link {
-  display: inline-block;
+  display: block;
   margin-left: 5px;
   text-decoration-skip-ink: none;
   color: var(--acent-color);
-}
-
-.submit__btn:hover {
-  background-color: red;
 }
 
 .submit__btn {

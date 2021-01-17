@@ -87,10 +87,11 @@
   color: var(--main-color);
   font-family: var(--main-font);
   font-weight: 400;
+}
 
-  &message {
-    margin-bottom: 20px;
-  }
+.user__message {
+  @extend .modal-form__label;
+  margin-bottom: 20px;
 }
 
 .modal-form__input {
@@ -99,7 +100,6 @@
   width: 100%;
   height: 40px;
   padding-left: 42px;
-  margin-top: 4px;
 
   font-family: var(--main-font);
   font-weight: 400;
@@ -122,6 +122,7 @@
 .modal-form__wraper {
   display: block;
   position: relative;
+  margin-top: 4px;
 }
 
 .modal-form__message {
@@ -182,70 +183,41 @@
 .modal-form__agreement {
   position: relative;
   margin-bottom: 30px;
-  display: block;
 }
 
-.modal-form__agreement > input {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
-// .checkbox {
-//   -moz-appearance: none;
-//   -webkit-appearance: none;
-//   appearance: none;
-// }
-
-//
-
-.banana {
-  display: inline-block;
-  color: blue;
+.modal-form__conditions {
+  display: flex;
+  align-items: center;
   font-family: var(--main-font);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  color: var(--main-color);
   cursor: pointer;
 
   &::before {
     display: inline-block;
+    margin-right: 7px;
+    margin-left: 12px;
     content: "";
     width: 16px;
     height: 15px;
-    border: 2px solid var(--title-color);
-    border-radius: 2px;
+    background-image: url(../../../images/original-images/icons-original/icon-unchecked.svg);
+    background-size: cover;
 
     transition: var(--time-transition) var(--duration-transition);
+
+    .check:checked + & {
+      background-image: url(../../../images/original-images/icons-original/icon-check.svg);
+      background-size: cover;
+    }
   }
 }
 
-.check:checked + .banana::before {
-  background-image: url(../../../images/original-images/icons-original/icon-check.svg);
-  background-size: cover;
-  border-color: transparent;
-}
-
 .modal-form__link {
-  display: inline-block;
+  display: block;
   margin-left: 5px;
   text-decoration-skip-ink: none;
   color: var(--acent-color);
-}
-
-// .modal-form__agreement > input :checked + .modal-form__accept::before {
-//   content: "";
-//   display: inline-block;
-//   border-color: transparent;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-color: var(--acent-color);
-//   background-image: url(../../../images/original-images/icons-original/icon-check.svg);
-//   width: 16px;
-//   height: 15px;
-// }
-
-.submit__btn:hover {
-  background-color: red;
 }
 
 .submit__btn {

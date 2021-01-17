@@ -422,7 +422,7 @@
     
     <!-- модальное окно -->
 
-    <div class="modal -is-hidden" data-modal>
+    <div class="modal is-hidden" data-modal>
       <div class="modal__window">
         <button class="close__btn" type="button" aria-label="Закрывает модальное окно" data-modal-close>
           <svg class="close__icon">
@@ -458,18 +458,14 @@
               </svg>
             </span>
           </label>
-          <label for="user-message" class="modal-form__label message">
+          <label for="user-message" class="user__message">
             Комментарий
             <textarea id="user-message" class="modal-form__message" name="user-message" placeholder="Введите текст"></textarea>
           </label>
-          <!-- <div class="modal-form__agreement">
-            <input сlass="checkbox" id="form-checkbox" type="checkbox" name="accept-conditions" value="accepted">
-            <label class="modal-form__accept" for="form-checkbox" >Соглашаюсь с рассылкой и принимаю
-              <a class="modal-form__link" href="#">Условия
-                договора</a></label>
-          </div> -->
-<input type="checkbox" id="checkbox" name="accept" value="accepted" class="check visually-hidden">
-<label for="checkbox" class="banana">Соглашаюсь <a href="">Условия</a> </label>
+          <div class="modal-form__agreement">
+            <input type="checkbox" id="checkbox" name="accept" value="accepted" class="check visually-hidden">
+            <label for="checkbox" class="modal-form__conditions">Соглашаюсь с рассылкой и принимаю <a class="modal-form__link" href=""> Условия договора</a> </label></div>
+
 
           <button class="submit__btn btn" type="submit">Отправить</button>
         </form>
