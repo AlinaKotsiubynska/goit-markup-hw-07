@@ -89,7 +89,7 @@ img {
   padding-bottom: 94px;
 }
 
-.section-title {
+.section-title, .works__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17%em;
@@ -434,19 +434,19 @@ nav {
   margin: 0 auto;
 }
 
-.works-list {
+.works__list {
   display: flex;
 }
 
-.works-list-item {
+.works__item {
   position: relative;
 }
 
-.works-list-item:not(:last-child) {
+.works__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.works-item-title {
+.works__label {
   position: absolute;
   bottom: 0;
   width: 100%;

@@ -1,16 +1,19 @@
-.works-list {
+.works__title {
+  @extend .section-title;
+}
+
+.works__list {
   display: flex;
 }
 
-.works-list-item {
+.works__item {
   position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.works-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.works-item-title {
+.works__label {
   position: absolute;
   bottom: 0;
 
