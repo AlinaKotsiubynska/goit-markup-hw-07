@@ -185,6 +185,12 @@
   margin-bottom: 30px;
 }
 
+.check {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .modal-form__conditions {
   display: flex;
   align-items: center;

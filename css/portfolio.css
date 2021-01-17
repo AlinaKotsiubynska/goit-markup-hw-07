@@ -47,7 +47,11 @@ h2,
 h3,
 p,
 a,
-button {
+button,
+form,
+input,
+label,
+span {
   font-family: var(--main-font);
 }
 
@@ -69,6 +73,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -106,7 +112,6 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
-  font-family: var(--main-font);
   color: var(--white-color);
   background-color: var(--acent-color);
   border-radius: 4px;

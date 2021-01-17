@@ -428,7 +428,7 @@ nav {
 .hero__title {
   width: 696px;
   padding-bottom: 30px;
-  ont-weight: 900;
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36em;
   letter-spacing: 0.06em;
@@ -720,6 +720,12 @@ nav {
 .modal-form__agreement {
   position: relative;
   margin-bottom: 30px;
+}
+
+.check {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .modal-form__conditions {
