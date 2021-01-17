@@ -34,12 +34,11 @@
   padding-bottom: 30px;
   @extend %centered;
 
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: 1.36em;
-  // letter-spacing: 0.06em;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36em;
+  letter-spacing: 0.06em;
 
-  @include font(900, 44px, 60px, 0.06); 
   text-align: center;
   text-transform: uppercase;
   color: var(--white-color);

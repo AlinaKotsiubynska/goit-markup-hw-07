@@ -625,20 +625,19 @@ nav {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  color: var(--title-color);
   letter-spacing: 0.03em;
+  color: var(--title-color);
   text-align: center;
 }
 
 .modal-form__label, .user__message {
   display: block;
   margin-bottom: 10px;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.15;
   letter-spacing: 0.01em;
   color: var(--main-color);
-  font-family: var(--main-font);
-  font-weight: 400;
 }
 
 .user__message {
@@ -744,7 +743,7 @@ nav {
   content: "";
   width: 16px;
   height: 15px;
-  background-image: url(../../../images/original-images/icons-original/icon-unchecked.svg);
+  background-image: url(/images/original-images/icons-original/icon-unchecked.svg);
   background-size: cover;
   transition: var(--time-transition) var(--duration-transition);
 }

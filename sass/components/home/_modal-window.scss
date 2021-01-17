@@ -69,11 +69,13 @@
 .modal-form__header {
   width: 100%;
   margin-bottom: 12px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  color: var(--title-color);
   letter-spacing: 0.03em;
+  color: var(--title-color);
+
   text-align: center;
 }
 
@@ -81,12 +83,12 @@
   display: block;
   margin-bottom: 10px;
 
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.15;
   letter-spacing: 0.01em;
   color: var(--main-color);
-  font-family: var(--main-font);
-  font-weight: 400;
+  // font-family: var(--main-font);
 }
 
 .user__message {
@@ -185,11 +187,11 @@
   margin-bottom: 30px;
 }
 
-.check {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
+// .check {
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+// }
 
 .modal-form__conditions {
   display: flex;
