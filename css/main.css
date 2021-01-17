@@ -732,13 +732,13 @@ nav {
   content: "";
   width: 16px;
   height: 15px;
-  background-image: url(/images/original-images/icons-original/icon-unchecked.svg);
+  background-image: url(../images/original-images/icons-original/icon-unchecked.svg);
   background-size: cover;
   transition: var(--time-transition) var(--duration-transition);
 }
 
 .check:checked + .modal-form__conditions::before {
-  background-image: url(../../../images/original-images/icons-original/icon-check.svg);
+  background-image: url(../images/original-images/icons-original/icon-check.svg);
   background-size: cover;
 }
 
